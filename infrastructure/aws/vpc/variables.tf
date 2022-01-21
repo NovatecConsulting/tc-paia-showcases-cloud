@@ -7,11 +7,11 @@ variable "profile" {
 }
 
 variable "environment" {
-  default = "showcase"
+  default = "paia"
 }
 
 variable "route53_public_main_zone" {
-  default = "aws.uweeisele.dev"
+  default = "novatec-playground53.de"
 }
 
 variable "vpc_cidr" {

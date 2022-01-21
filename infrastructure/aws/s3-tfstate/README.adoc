@@ -1,0 +1,18 @@
+= S3 Terraform State
+
+== Apply Terraform
+
+[source,bash]
+----
+terraform init -backend-config="profile=nt-playground"
+----
+
+[source,bash]
+----
+terraform plan --var "profile=nt-playground"
+----
+
+[source,bash]
+----
+terraform apply --var "profile=nt-playground"
+----

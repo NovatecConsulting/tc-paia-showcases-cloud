@@ -4,17 +4,17 @@
 
 [source,bash]
 ----
-terraform init -backend-config="profile=tu-dev-ueisele"
+terraform init -backend-config="profile=nt-playground"
 ----
 
 [source,bash]
 ----
-terraform plan --var "profile=tu-dev-ueisele"
+terraform plan --var "profile=nt-playground"
 ----
 
 [source,bash]
 ----
-terraform apply --var "profile=tu-dev-ueisele"
+terraform apply --var "profile=nt-playground"
 ----
 
 == Save Outputs to Variables

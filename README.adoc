@@ -1,4 +1,4 @@
-= Cloud Showcases
+= TC P AIA Showcases Cloud
 
 The goal of this repository is to demonstrate and evaluate cloud services and to provide an infrastructure for additional showcases.
 
@@ -12,7 +12,7 @@ The goal of this repository is to demonstrate and evaluate cloud services and to
 
 image:infrastructure/showcase-infrastructure.drawio.png[]
 
-link:https://app.diagrams.net/#Hueisele%2Fshowcases-cloud%2Fmain%2Finfrastructure%2Fshowcase-infrastructure.drawio.png[Edit, window=\"_blank\"]
+link:https://app.diagrams.net/#HNovatecConsulting%2Ftc-paia-showcases-cloud%2Fmain%2Finfrastructure%2Fshowcase-infrastructure.drawio.png[Edit, window=\"_blank\"]
 
 *link:platform/README.adoc[Platforms]*
 
@@ -23,10 +23,14 @@ link:https://app.diagrams.net/#Hueisele%2Fshowcases-cloud%2Fmain%2Finfrastructur
 Download and install the following tools:
 
 * link:https://www.terraform.io/downloads[Terraform]
-* link:https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html[AWS CLI]
 * link:https://kubernetes.io/docs/tasks/tools/[Kubectl]
 * link:https://helm.sh/docs/intro/install/[Helm]
+* link:https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html[AWS CLI]
 
-Configure the following tools:
+Configure the tools:
 
-* link:https://docs.aws.amazon.com/en_en/translate/latest/dg/setup-awscli.html[AWS CLI]
+.Create AWS Cli profile
+[source,bash]
+----
+aws configure --profile nt-playground
+----

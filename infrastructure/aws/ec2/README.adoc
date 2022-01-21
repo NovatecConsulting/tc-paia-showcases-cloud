@@ -1,0 +1,20 @@
+= EC2
+
+NOTE: Not used at the moment!
+
+== Apply Terraform
+
+[source,bash]
+----
+terraform init -backend-config="profile=nt-playground-ue"
+----
+
+[source,bash]
+----
+terraform plan --var "profile=nt-playground-ue"
+----
+
+[source,bash]
+----
+terraform apply --var "profile=nt-playground-ue"
+----

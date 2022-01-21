@@ -3,7 +3,7 @@ terraform {
   backend "s3" {
     region         = "eu-central-1"
     bucket         = "tfstate-paia"
-    key            = "showcase-vpc"
+    key            = "showcase-ec2"
     dynamodb_table = "tfstate-paia"
   }
 }

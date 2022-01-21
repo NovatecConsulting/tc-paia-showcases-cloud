@@ -4,17 +4,17 @@
 
 [source,bash]
 ----
-terraform init -backend-config="profile=tu-dev-ueisele"
+terraform init -backend-config="profile=nt-playground"
 ----
 
 [source,bash]
 ----
-terraform plan --var "profile=tu-dev-ueisele"
+terraform plan --var "profile=nt-playground"
 ----
 
 [source,bash]
 ----
-terraform apply --var "profile=tu-dev-ueisele"
+terraform apply --var "profile=nt-playground"
 ----
 
 == Save Outputs to Variables
@@ -32,7 +32,7 @@ export EXTERNAL_DNS_ROLE_ARN="$(terraform output --raw external-dns-controller-r
 
 [source,bash]
 ----
-aws eks --region eu-central-1 --profile tu-dev-ueisele update-kubeconfig --name showcase-eks
+aws eks --region eu-central-1 --profile nt-playground update-kubeconfig --name showcase-eks
 ----
 
 == Connect to Instances
@@ -41,7 +41,7 @@ This VPC requires AWS Systems Manager Session Manager to connect to the Amazon E
 
 [source,bash]
 ----
-aws ssm start-session --profile tu-dev-ueisele --target i-07285b57d9a6ebaa2
+aws ssm start-session --profile nt-playground --target i-07285b57d9a6ebaa2
 ----
 
 * https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-getting-started.html
