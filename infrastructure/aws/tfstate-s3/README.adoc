@@ -1,0 +1,24 @@
+= S3 Terraform State Backend
+
+IMPORTANT: The Terraform state has intentionally not been commited to Git. The reason is, that it may contain sensitive information and this is a public repository. 
+
+IMPORTANT: Only apply if the S3 bucket and the DynamoDB table does not exist!
+
+Ensure you have the required link:required-iam-policy.json[IAM permissions].
+
+== Apply Terraform
+
+[source,bash]
+----
+terraform init
+----
+
+[source,bash]
+----
+terraform plan --var "profile=nt-playground"
+----
+
+[source,bash]
+----
+terraform apply --var "profile=nt-playground"
+----
